@@ -17,7 +17,7 @@ Proximamente
 
 -Detalles de Carreras (Materias, Creditos, etc)
 
-Reporte cualquier Bug a Mtz677@hotmail.com
+Reporte cualquier Bug a <Mtz677@hotmail.com>
 
 ## Licencia
 
