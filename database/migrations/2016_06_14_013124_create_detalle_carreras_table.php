@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMateriasCarrerasTable extends Migration
+class CreateDetalleCarrerasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,16 +12,18 @@ class CreateMateriasCarrerasTable extends Migration
      */
     public function up()
     {
-        Schema::create('materia_carreras', function(Blueprint $table)
-        {
+        Schema::create('detalle_carreras', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('carrera_id')->unsigned();
             $table->foreign('carrera_id')->references('id')->on('carreras');
-            $table->integer('materia_id')->unsigned();
-            $table->foreign('materia_id')->references('id')->on('materias');
+            $table->integer('num_mat');
+            $table->integer('cre_obl');
+            $table->integer('cre_tec');
+            $table->integer('cre_hum');
+            $table->string('otros',100)->nullable();
             $table->timestamps();
         });
-    }
+    }\\
 
     /**
      * Reverse the migrations.
@@ -30,6 +32,6 @@ class CreateMateriasCarrerasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('materia_carreras');
+        Schema::drop('detalle_carreras');
     }
 }
