@@ -1,0 +1,14 @@
+.pensum  .panel-heading a {
+	color:white;
+	text-decoration: none;
+}
+.pensum .panel-body table thead, .pensum .panel-footer {
+	color: white;
+	background: black;
+}
+.pensum .table {
+	margin-bottom: 0;
+}
+.pensum .panel-body {
+	padding: 0;
+}

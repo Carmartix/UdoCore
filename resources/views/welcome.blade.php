@@ -1,45 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
+@section('content')
+<div class="container">
+    <div class="row">
+        <header class="page-header">
+          <h1 class="text-center"><i class="fa fa-star"></i> Bienvenido a UdoCore <small class="label label-success">V 1.0</small></h1>
+        </header>
+        <div class="col-sm-3 col-sm-offset-4">
+          <a href="{{url('carrera')}}" class="btn btn-lg btn-primary" >Ver Carreras de la UDO-Monagas <i class="fa fa-chevron-right fa-fw"></i> </a>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+@endsection
